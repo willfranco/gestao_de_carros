@@ -44,7 +44,7 @@ class CarUpdateView(UpdateView):
 
 
 @method_decorator(login_required(login_url='login'), name='dispatch')
-class CarDeletView(DeleteView):
+class CarDeleteView(DeleteView):
     model = Car
     template_name = 'car_delete.html'
     success_url = '/cars/'
